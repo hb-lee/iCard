@@ -1,0 +1,39 @@
+package com.easypay.icard.aty;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.easypay.icard.R;
+
+public class BusinessDetailActivity extends Activity {
+
+	private ImageButton backTo = null;
+	private TextView titleBar = null;
+	private ImageButton ticketDone = null;
+	private ImageView businessPic = null;
+	private TextView gradeTotal = null;
+	private TextView phoneOfBusiness = null;
+	private ImageView mapBusiness = null;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.businessdetail);
+		init();
+	}
+
+	private void init() {
+		backTo  = (ImageButton)findViewById(R.id.businessdetail_back);
+		titleBar = (TextView)findViewById(R.id.businessdetail_title);
+		ticketDone = (ImageButton)findViewById(R.id.businessdetail_ticket);
+		businessPic = (ImageView)findViewById(R.id.business_info_pic);
+		gradeTotal = (TextView)findViewById(R.id.business_grade);
+		phoneOfBusiness = (TextView)findViewById(R.id.business_phone);
+		mapBusiness = (ImageView)findViewById(R.id.business_map);
+	}
+	
+}

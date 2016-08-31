@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_title_bar_height"
+        android:background="@color/theme_color" >
+
+        <ImageButton
+            android:id="@+id/applysuccess_back"
+            android:layout_width="@dimen/common_title_bar_icon_width"
+            android:layout_height="fill_parent"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/bg_common_title_bar_btn"
+            android:contentDescription="@string/back"
+            android:scaleType="center"
+            android:src="@drawable/ic_common_title_bar_back" />
+
+        <TextView
+            android:id="@+id/applysuccess_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/applysuccess_title"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_title_text_size" />
+    </RelativeLayout>
+
+     <TextView 
+         android:layout_width="match_parent"
+         android:layout_height="100sp"
+         android:gravity="center" 
+         android:id="@+id/applysuccess_result"
+         android:text="@string/applysuccess_result"/>
+     <View 
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/line_height"
+         android:layout_marginLeft="@dimen/line_margin_side"
+         android:layout_marginRight="@dimen/line_margin_side"
+         android:layout_marginTop="@dimen/line_margin_updown"
+         android:layout_marginBottom="@dimen/line_margin_updown"
+         android:background="@color/black"/>
+     <LinearLayout 
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_weight="2"
+         android:orientation="vertical"
+         android:paddingTop="20dp"
+         android:gravity="center">
+         <ImageView 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:background="@drawable/example1"
+             android:id="@+id/applysuccess_QRcode"/>
+         <LinearLayout 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:orientation="vertical">
+             <TextView 
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/applysuccess_card_number"
+                 android:text="@string/card_number"/>
+             <TextView 
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/applysuccess_card_balance"
+                 android:text="@string/card_balance"/>
+             <TextView 
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/applysuccess_card_credit"
+                 android:text="@string/card_credits"/>
+         </LinearLayout>
+     </LinearLayout>
+     <LinearLayout 
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:orientation="vertical"
+         android:gravity="center">
+         <Button 
+             android:id="@+id/applysuccess_btn"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="@string/to_charge"/>
+     </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">iCard</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+	<string name="index">首页</string>
+	<string name="near">附近</string>
+	<string name="business">商家</string>
+	<string name="own">我的</string>
+	<string name="guess_you_like">猜你喜欢</string>
+	<string name="recommend_near">附近推荐</string>
+	<string name="business_input_hint">请输入店家名称</string>
+	<string name="back">返回</string>
+	<string name="business_grade">综合得分</string>
+	<string name="business_phone">联系方式</string>
+	<string name="businesdetail_details">详情介绍：</string>
+	<string name="rights_description">该卡具备以下特权：</string>
+	<string name="applysuccess_title">办卡成功</string>
+	<string name="applysuccess_result">恭喜您，获得一张电子会员卡</string>
+	<string name="card_number">卡号：</string>
+	<string name="card_balance">余额：</string>
+	<string name="card_credits">积分：</string>
+	<string name="to_charge">我要充值</string>
+	<string name="own_bill">账单</string>
+	<string name="own_name">姓名：</string>
+	<string name="own_phone">电话：</string>
+	<string name="own_my_parcel">我的卡包</string>
+	<string name="cardlist_title">我的会员卡</string>
+	<string name="carddetail_title">会员卡详情</string>
+	<string name="carddetail_phone">联系商家</string>
+	<string name="carddetail_charge">我要充值</string>
+	<string name="carddetail_logout">我要注销</string>
+	<string name="carddetail_range">使用范围：</string>
+	<string name="carddetail_holder">持卡人：</string>
+	<string name="carddetail_balance">余额：</string>
+	<string name="carddetail_credits">积分：</string>
+	<string name="carddetail_number">卡号：</string>
+	<string name="billlist_title">我的账单</string>
+	<string name="contacts_title">通讯录</string>
+	<string name="contacts_add_friends">添加新朋友</string>
+	<string name="personinfo_title">个人信息</string>
+	<string name="personinfo_name">姓名：</string>
+	<string name="personinfo_account">账号：</string>
+	<string name="personinfo_gender">性别：</string>
+	<string name="donate_to_sb">给他(她)赠卡</string>
+	<string name="donatecard_title">选择赠送</string>
+	<string name="donatecard_donate">赠送给他(她)</string>
+	<string name="searchfriend_cancel">取消</string>
+	<string name="search_input_hint">输入账号/手机号</string>
+	<string name="near_input_hint">请输入搜索的类别</string>
+</resources>
