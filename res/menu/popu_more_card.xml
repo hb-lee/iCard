@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item 
+        android:id="@+id/menu_add_card"
+        android:title="@string/menu_add_card"
+        android:visible="true"
+        android:orderInCategory="1"
+        android:showAsAction="never"/>
+    <item 
+        android:id="@+id/menu_donate_card"
+        android:title="@string/menu_donate_card"
+        android:visible="true"
+        android:orderInCategory="2"
+        android:showAsAction="never"/>
+    <item 
+        android:id="@+id/menu_cancel"
+        android:title="@string/menu_cancel"
+        android:visible="true"
+        android:orderInCategory="3"
+        android:showAsAction="never"/>
+
+</menu>

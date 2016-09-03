@@ -12,35 +12,50 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@android:style/Theme.NoTitleBar" >
         <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name" 
-            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            android:name=".ViewPagerActivity"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ViewPagerActivity"></activity>
-        <activity android:name=".EmptyActivity"></activity>
-        <activity android:name=".aty.ApplyCardActivity"></activity>
-        <activity android:name=".aty.BillListActivity"></activity>
-        <activity android:name=".aty.BusinessActivity"></activity>
-        <activity android:name=".aty.BusinessDetailActivity"></activity>
-        <activity android:name=".aty.CardDetailActivity"></activity>
-        <activity android:name=".aty.CardFunctionActivity"></activity>
-        <activity android:name=".aty.CardListActivity"></activity>
-        <activity android:name=".aty.ContactsActivity"></activity>
-        <activity android:name=".aty.DonateCardActivity"></activity>
-        <activity android:name=".aty.IndexActivity"></activity>
-        <activity android:name=".aty.ItemListActivity"></activity>
-        <activity android:name=".aty.NearActivity"></activity>
-        <activity android:name=".aty.OwnActivity"></activity>
-        <activity android:name=".aty.PersonInfoActivity"></activity>
-        <activity android:name=".aty.SearchFriendActivity"></activity>
-        <activity android:name=".aty.TypeDisplayActivity"></activity>
+        <activity android:name=".EmptyActivity" >
+        </activity>
+        <activity android:name=".aty.ApplyCardActivity" >
+        </activity>
+        <activity android:name=".aty.BillListActivity" >
+        </activity>
+        <activity android:name=".aty.BusinessActivity" >
+        </activity>
+        <activity android:name=".aty.BusinessDetailActivity" >
+        </activity>
+        <activity android:name=".aty.CardDetailActivity" >
+        </activity>
+        <activity android:name=".aty.CardFunctionActivity" >
+        </activity>
+        <activity android:name=".aty.CardListActivity" >
+        </activity>
+        <activity android:name=".aty.ContactsActivity" >
+        </activity>
+        <activity android:name=".aty.DonateCardActivity" >
+        </activity>
+        <activity android:name=".aty.IndexActivity" >
+        </activity>
+        <activity android:name=".aty.ItemListActivity" >
+        </activity>
+        <activity android:name=".aty.NearActivity" >
+        </activity>
+        <activity android:name=".aty.OwnActivity" >
+        </activity>
+        <activity android:name=".aty.PersonInfoActivity" >
+        </activity>
+        <activity android:name=".aty.SearchFriendActivity" >
+        </activity>
+        <activity android:name=".aty.TypeDisplayActivity" >
+        </activity>
     </application>
 
 </manifest>

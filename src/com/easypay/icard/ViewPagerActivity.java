@@ -13,6 +13,7 @@ import android.os.Parcelable;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
@@ -43,6 +44,7 @@ public class ViewPagerActivity extends Activity {
 		manager = new LocalActivityManager(this, true);
 		manager.dispatchCreate(savedInstanceState);
 		
+		
 		Intent i1 = new Intent(context, IndexActivity.class);
 		listViews.add(getView("A", i1));
 		Intent i2 = new Intent(context, NearActivity.class);
@@ -56,38 +58,47 @@ public class ViewPagerActivity extends Activity {
 		tabHost.setup();
 		tabHost.setup(manager);
 		
+		Log.e("mylog", "index in");
 		//这儿主要是自定义一下tabhost中的tab的样式
 		LinearLayout tabIndicator1 = (LinearLayout) LayoutInflater.from(this).inflate(R.layout.tabwidget, null);  
 		TextView tvTab1 = (TextView)tabIndicator1.findViewById(R.id.viewpager_text);
 		tvTab1.setText(R.string.index);
 		ImageView imgTab1 = (ImageView)tabIndicator1.findViewById(R.id.viewpager_image);
 		imgTab1.setBackgroundResource(R.drawable.index_icon);
+		Log.e("mylog", "index out");
 		
-		
+		Log.e("mylog", "near in");
 		LinearLayout tabIndicator2 = (LinearLayout) LayoutInflater.from(this).inflate(R.layout.tabwidget,null);  
 		TextView tvTab2 = (TextView)tabIndicator2.findViewById(R.id.viewpager_text);
 		tvTab2.setText(R.string.near);
 		ImageView imgTab2 = (ImageView)tabIndicator2.findViewById(R.id.viewpager_image);
 		imgTab2.setBackgroundResource(R.drawable.near_icon);
+		Log.e("mylog", "near out");
 		
+		Log.e("mylog", "business in");
 		LinearLayout tabIndicator3 = (LinearLayout) LayoutInflater.from(this).inflate(R.layout.tabwidget,null);  
 		TextView tvTab3 = (TextView)tabIndicator3.findViewById(R.id.viewpager_text);
 		tvTab3.setText(R.string.business);
 		ImageView imgTab3 = (ImageView)tabIndicator3.findViewById(R.id.viewpager_image);
 		imgTab3.setBackgroundResource(R.drawable.business_icon);
+		Log.e("mylog", "business out");
 		
+		Log.e("mylog", "own in");
 		LinearLayout tabIndicator4 = (LinearLayout) LayoutInflater.from(this).inflate(R.layout.tabwidget,null);  
 		TextView tvTab4 = (TextView)tabIndicator4.findViewById(R.id.viewpager_text);
-		tvTab3.setText(R.string.own);
+		tvTab4.setText(R.string.own);
 		ImageView imgTab4 = (ImageView)tabIndicator4.findViewById(R.id.viewpager_image);
 		imgTab4.setBackgroundResource(R.drawable.own_icon);
+		Log.e("mylog", "own out");
 		
+		Log.e("mylog", "intent change in");
 		Intent intent = new Intent(context,EmptyActivity.class);
 		//注意这儿Intent中的activity不能是自身 比如“A”对应的是T1Activity，后面intent就new的T3Activity的。
 		tabHost.addTab(tabHost.newTabSpec("A").setIndicator(tabIndicator1).setContent(intent));
+		Log.e("mylog", "intent change out");
 		tabHost.addTab(tabHost.newTabSpec("B").setIndicator(tabIndicator2).setContent(intent));
 		tabHost.addTab(tabHost.newTabSpec("C").setIndicator(tabIndicator3).setContent(intent));
-		tabHost.addTab(tabHost.newTabSpec("D").setIndicator(tabIndicator3).setContent(intent));
+		tabHost.addTab(tabHost.newTabSpec("D").setIndicator(tabIndicator4).setContent(intent));
 		
 		
 		pager .setAdapter(new MyPageAdapter(listViews));
@@ -123,6 +134,7 @@ public class ViewPagerActivity extends Activity {
                 } 
             }
         });
+        
 	}
 
 	private View getView(String id, Intent intent) {

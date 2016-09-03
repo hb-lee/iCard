@@ -1,7 +1,10 @@
 package com.easypay.icard.aty;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -17,7 +20,6 @@ public class CardFunctionActivity extends Activity {
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.cardfunction);
 		init();
@@ -28,6 +30,17 @@ public class CardFunctionActivity extends Activity {
 		titleBar = (TextView)findViewById(R.id.cardfunction_title);
 		cardPic = (ImageView)findViewById(R.id.cardfunction_card_pic);
 		cardRights = (TextView)findViewById(R.id.rights_contents);
+		
+		backTo.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				Intent intent = new Intent();
+				intent.setClass(getApplicationContext(), ApplyCardActivity.class);
+				startActivity(intent);
+				finish();
+			}
+		});
 	}
 	
 }

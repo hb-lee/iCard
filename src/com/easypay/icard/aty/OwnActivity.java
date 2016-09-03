@@ -1,7 +1,10 @@
 package com.easypay.icard.aty;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
@@ -35,6 +38,49 @@ public class OwnActivity extends Activity {
 		ownName = (TextView)findViewById(R.id.own_name);
 		ownPhone = (TextView)findViewById(R.id.own_phone);
 		ownParcel = (RelativeLayout)findViewById(R.id.own_parcel);
+		
+		billText.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				Intent intent = new Intent();
+				intent.setClass(getApplicationContext(), BillListActivity.class);
+				startActivity(intent);
+			}
+		});
+		
+		friendsImgBtn.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				Intent intent = new Intent();
+				intent.setClass(getApplicationContext(), ContactsActivity.class);
+				startActivity(intent);
+			}
+		});
+		
+		addImgBtn.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				Intent intent = new Intent();
+				intent.setClass(getApplicationContext(), SearchFriendActivity.class);
+				startActivity(intent);
+			}
+		});
+		
+		ownName.append("张三");
+		ownPhone.append("13435839493");
+		
+		ownParcel.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				Intent intent = new Intent();
+				intent.setClass(getApplicationContext(), CardListActivity.class);
+				startActivity(intent);
+			}
+		});
 	}
 
 }

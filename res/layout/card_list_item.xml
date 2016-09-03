@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="60dp"
     android:id="@+id/card_list_item_linearlayout"
+    android:background="@drawable/example"
     android:orientation="horizontal" >
     <TextView 
         android:layout_width="match_parent"

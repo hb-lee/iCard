@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="3dp"
         android:id="@+id/cardfunction_card_pic"
-        android:background="@drawable/example"/>
+        android:background="@drawable/example3"/>
     <TextView 
         android:layout_marginTop="8dp"
         android:layout_marginLeft="3dp"

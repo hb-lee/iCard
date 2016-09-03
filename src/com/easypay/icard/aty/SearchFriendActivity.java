@@ -25,4 +25,9 @@ public class SearchFriendActivity extends Activity {
 		searchContent = (EditText)findViewById(R.id.searchfriend_content);
 	}
 
+	@Override
+	public void onBackPressed() {
+		finish();
+		super.onBackPressed();
+	}
 }

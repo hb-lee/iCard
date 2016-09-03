@@ -12,6 +12,7 @@
 	<string name="recommend_near">附近推荐</string>
 	<string name="business_input_hint">请输入店家名称</string>
 	<string name="back">返回</string>
+	<string name="typedisplay_title">更多</string>
 	<string name="business_grade">综合得分</string>
 	<string name="business_phone">联系方式</string>
 	<string name="businesdetail_details">详情介绍：</string>
@@ -49,4 +50,13 @@
 	<string name="searchfriend_cancel">取消</string>
 	<string name="search_input_hint">输入账号/手机号</string>
 	<string name="near_input_hint">请输入搜索的类别</string>
+	<string name="applycard_title">办理会员卡</string>
+	<string name="applycard_name_input_hint">请输入您的真实姓名</string>
+	<string name="applycard_phone_input_hint">请输入常用的手机号</string>
+	<string name="applycard_vcode_get">获取验证码</string>
+	<string name="applycard_what_type">请选择要办会员卡的类型</string>
+	<string name="applycard_done">申请办卡</string>
+	<string name="menu_add_card">添加会员卡</string>
+	<string name="menu_donate_card">赠送会员卡</string>
+	<string name="menu_cancel">取消</string>
 </resources>
