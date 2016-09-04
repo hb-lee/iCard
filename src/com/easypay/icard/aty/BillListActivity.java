@@ -23,7 +23,6 @@ public class BillListActivity extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.billlist);
 		init();
@@ -40,7 +39,6 @@ public class BillListActivity extends Activity {
 				Intent intent = new Intent();
 				intent.setClass(getApplicationContext(), OwnActivity.class);
 				startActivity(intent);
-				finish();
 			}
 		});
 

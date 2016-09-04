@@ -8,6 +8,7 @@ import java.util.Map;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
@@ -46,15 +47,15 @@ public class BusinessActivity extends Activity {
 			@Override
 			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
 					long arg3) {
-				if(arg2 < 5){
+				if(arg2 < 4){
 					Intent intent = new Intent();
 					intent.setClass(getApplicationContext(), ItemListActivity.class);
 					startActivity(intent);
 				} else {
+					Log.e("mylog", "business gridview item 5 in");
 					Intent intent = new Intent();
 					intent.setClass(getApplicationContext(), TypeDisplayActivity.class);
 					startActivity(intent);
-					finish();
 				}
 				
 			}
@@ -75,7 +76,7 @@ public class BusinessActivity extends Activity {
 			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
 					long arg3) {
 				Intent intent = new Intent();
-				intent.setClass(getApplicationContext(), BusinessActivity.class);
+				intent.setClass(getApplicationContext(), BusinessDetailActivity.class);
 				startActivity(intent);
 			}
 		});

@@ -38,7 +38,6 @@ public class CardFunctionActivity extends Activity {
 				Intent intent = new Intent();
 				intent.setClass(getApplicationContext(), ApplyCardActivity.class);
 				startActivity(intent);
-				finish();
 			}
 		});
 	}

@@ -38,7 +38,6 @@ public class DonateCardActivity extends Activity {
 				intent.setClass(getApplicationContext(),
 						PersonInfoActivity.class);
 				startActivity(intent);
-				finish();
 			}
 		});
 		

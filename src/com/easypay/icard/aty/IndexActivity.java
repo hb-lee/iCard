@@ -9,12 +9,14 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.easypay.icard.R;
 
@@ -117,6 +119,14 @@ public class IndexActivity extends Activity {
 		adsImage3 = (ImageView) findViewById(R.id.index_ads_image3);
 		adsImage4 = (ImageView) findViewById(R.id.index_ads_image4);
 		listView = (ListView) findViewById(R.id.index_listview);
+		
+		adsTextTitle1.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				Toast.makeText(getApplicationContext(), "此处为4个广告栏", Toast.LENGTH_SHORT).show();
+			}
+		});
 	}
 
 }

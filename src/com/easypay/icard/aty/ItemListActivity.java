@@ -46,7 +46,7 @@ public class ItemListActivity extends Activity {
 			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
 					long arg3) {
 				Intent intent = new Intent();
-				intent.setClass(getApplicationContext(), BusinessActivity.class);
+				intent.setClass(getApplicationContext(), BusinessDetailActivity.class);
 				startActivity(intent);
 			}
 		});

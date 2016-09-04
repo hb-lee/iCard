@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/gray"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" />
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.0"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <RadioGroup
+                android:id="@+id/main_tab_group"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@drawable/tab_bottom"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                 >
+
+                <RadioButton
+                    android:id="@+id/main_tab_index"
+                    style="@style/MMTabButton"
+                    android:layout_weight="1.0"    
+                    android:checked="true"
+                    android:drawableTop="@drawable/tab_index_selector"
+                    android:text="@string/index" />
+
+                <RadioButton
+                    android:id="@+id/main_tab_near"
+                    style="@style/MMTabButton"
+                    android:layout_weight="1.0"
+                    android:drawableTop="@drawable/tab_near_selector"
+                    android:text="@string/near" />
+
+                <RadioButton
+                    android:id="@+id/main_tab_business"
+                    style="@style/MMTabButton"
+                    android:layout_weight="1.0"
+                    android:drawableTop="@drawable/tab_business_selector"
+                    android:text="@string/business" />
+
+                <RadioButton
+                    android:id="@+id/main_tab_own"
+                    style="@style/MMTabButton"
+                    android:layout_weight="1.0"   
+                    android:drawableTop="@drawable/tab_own_selector"
+                    android:text="@string/own" />
+            </RadioGroup>
+
+        </FrameLayout>
+    </LinearLayout>
+
+</TabHost>

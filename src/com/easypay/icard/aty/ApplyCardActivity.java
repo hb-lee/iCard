@@ -55,7 +55,6 @@ public class ApplyCardActivity extends Activity {
 				intent.setClass(getApplicationContext(),
 						BusinessDetailActivity.class);
 				startActivity(intent);
-				finish();
 			}
 		});
 

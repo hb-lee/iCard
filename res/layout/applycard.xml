@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     android:orientation="vertical" >
 
     <RelativeLayout
@@ -33,26 +34,28 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:orientation="vertical" >
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
 
         <EditText
             android:id="@+id/applycard_name_input"
             android:layout_width="200dp"
-            android:layout_height="40dp"
-            android:layout_marginBottom="5dp"
+            android:layout_height="38dp"
+            android:layout_marginBottom="3dp"
             android:hint="@string/applycard_name_input_hint" />
 
         <EditText
             android:id="@+id/applycard_phone_input"
             android:layout_width="200dp"
-            android:layout_height="40dp"
-            android:layout_marginBottom="5dp"
+            android:layout_height="38dp"
+            android:layout_marginBottom="3dp"
             android:hint="@string/applycard_phone_input_hint"
             android:inputType="phone" />
 
         <LinearLayout
             android:layout_width="200dp"
-            android:layout_height="40dp"
+            android:layout_height="38dp"
             android:orientation="horizontal" >
 
             <EditText
@@ -66,44 +69,50 @@
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/applycard_vcode_get" />
+                android:text="@string/applycard_vcode_get"
+                android:textColor="@color/black" />
         </LinearLayout>
     </LinearLayout>
 
     <View
         android:layout_width="match_parent"
         android:layout_height="@dimen/line_height"
-        android:layout_marginBottom="@dimen/line_margin_updown"
         android:layout_marginLeft="@dimen/line_margin_side"
         android:layout_marginRight="@dimen/line_margin_side"
-        android:layout_marginTop="@dimen/line_margin_updown"
-        android:background="@color/black" />
+        android:background="@color/gray" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
         android:text="@string/applycard_what_type"
-        android:textColor="@color/black"
-        android:textSize="20sp" />
+        android:textColor="@color/sub_list"
+        android:textSize="16sp" />
 
     <ListView
         android:id="@+id/applycard_listView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp" >
     </ListView>
-    
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:background="?android:attr/detailsElementBackground" >
-         <Button
+
+        <Button
             android:id="@+id/applycard_done"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="@string/applycard_done" />
     </FrameLayout>
+
 </LinearLayout>

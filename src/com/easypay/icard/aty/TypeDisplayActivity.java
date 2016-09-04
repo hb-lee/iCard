@@ -8,6 +8,7 @@ import java.util.Map;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.AdapterView;
@@ -31,9 +32,12 @@ public class TypeDisplayActivity extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
+		Log.e("mylog", "typedisplay setContentView in");
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.typedisplay);
+		Log.e("mylog", "typedisplay in");
 		init();
+		Log.e("mylog", "typedisplay init() out");
 	}
 
 	private void init() {
@@ -47,7 +51,6 @@ public class TypeDisplayActivity extends Activity {
 				Intent intent = new Intent();
 				intent.setClass(getApplicationContext(), BusinessActivity.class);
 				startActivity(intent);
-				finish();
 			}
 		});
 
