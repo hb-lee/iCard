@@ -55,21 +55,21 @@ public class BillListActivity extends Activity {
 	private List<Map<String, Object>> getData() {
 		List<Map<String, Object>> list = new ArrayList<Map<String,Object>>();
 		Map<String, Object> map = new HashMap<String, Object>();
-		map.put("data", "7月30日");
-		map.put("account", "143元");
-		map.put("reason", "印象KTV消费");
+		map.put("data", "8月1日");
+		map.put("account", "50元");
+		map.put("reason", "小木人火锅");
 		list.add(map);
 		
 		map = new HashMap<String, Object>();
 		map.put("data", "8月1日");
-		map.put("account", "24元");
-		map.put("reason", "吉大巨幕影城消费");
+		map.put("account", "50元");
+		map.put("reason", "小木人火锅");
 		list.add(map);
 		
 		map = new HashMap<String, Object>();
-		map.put("data", "8月13日");
-		map.put("account", "45元");
-		map.put("reason", "金牌烤场消费");
+		map.put("data", "8月1日");
+		map.put("account", "50元");
+		map.put("reason", "小木人火锅");
 		list.add(map);
 		return list;
 	}

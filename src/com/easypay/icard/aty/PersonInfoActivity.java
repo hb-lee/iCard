@@ -3,7 +3,6 @@ package com.easypay.icard.aty;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -26,27 +25,17 @@ public class PersonInfoActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.personinfo);
-		Log.e("mylog", "personinfo activity in");
 		init();
 	}
 
 	private void init() {
-		Bundle bundle = new Bundle();
-		bundle = getIntent().getExtras();
 		backTo = (ImageButton)findViewById(R.id.personinfo_back);
 		personPhoto = (ImageView)findViewById(R.id.personinfo_pic);
 		personName = (TextView)findViewById(R.id.personinfo_name);
 		personAccount = (TextView)findViewById(R.id.personinfo_account);
 		personGender = (TextView)findViewById(R.id.personinfo_gender);
 		donateBtn = (Button)findViewById(R.id.personinfo_donate_btn);
-		Log.e("mylog", "before donateBtn");
-		if(bundle.getString("activity").equals("OwnActivity")){
-			//donateBtn.setEnabled(false);
-			donateBtn.setVisibility(View.INVISIBLE);
-		} else {
-			//donateBtn.setEnabled(true);
-			donateBtn.setVisibility(View.VISIBLE);
-		}
+		
 		backTo.setOnClickListener(new OnClickListener() {
 			
 			@Override

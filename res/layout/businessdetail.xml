@@ -94,12 +94,4 @@
         android:textSize="20sp"
         android:textColor="@color/sub_list"
         android:text="@string/businesdetail_details"/>
-    <TextView 
-        android:id="@+id/businessdetail_contents"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:layout_marginLeft="20dp"
-        android:textColor="@color/black"
-        android:textSize="13sp"/>
 </LinearLayout>
