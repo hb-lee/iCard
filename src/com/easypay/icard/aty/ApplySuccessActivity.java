@@ -58,7 +58,6 @@ public class ApplySuccessActivity extends Activity {
 						Intent intent = new Intent();
 						intent.setClass(getApplicationContext(), ApplyCardActivity.class);
 						startActivity(intent);
-						finish();
 					}
 				}).setNegativeButton("好的!", new DialogInterface.OnClickListener() {
 					

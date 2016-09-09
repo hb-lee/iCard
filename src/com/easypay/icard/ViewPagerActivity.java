@@ -64,7 +64,7 @@ public class ViewPagerActivity extends Activity {
 		TextView tvTab1 = (TextView)tabIndicator1.findViewById(R.id.viewpager_text);
 		tvTab1.setText(R.string.index);
 		ImageView imgTab1 = (ImageView)tabIndicator1.findViewById(R.id.viewpager_image);
-		imgTab1.setBackgroundResource(R.drawable.index_icon);
+		imgTab1.setBackgroundResource(R.drawable.index_blue_icon);
 		Log.e("mylog", "index out");
 		
 		Log.e("mylog", "near in");
@@ -72,7 +72,7 @@ public class ViewPagerActivity extends Activity {
 		TextView tvTab2 = (TextView)tabIndicator2.findViewById(R.id.viewpager_text);
 		tvTab2.setText(R.string.near);
 		ImageView imgTab2 = (ImageView)tabIndicator2.findViewById(R.id.viewpager_image);
-		imgTab2.setBackgroundResource(R.drawable.near_icon);
+		imgTab2.setBackgroundResource(R.drawable.near_blue_icon);
 		Log.e("mylog", "near out");
 		
 		Log.e("mylog", "business in");
@@ -80,7 +80,7 @@ public class ViewPagerActivity extends Activity {
 		TextView tvTab3 = (TextView)tabIndicator3.findViewById(R.id.viewpager_text);
 		tvTab3.setText(R.string.business);
 		ImageView imgTab3 = (ImageView)tabIndicator3.findViewById(R.id.viewpager_image);
-		imgTab3.setBackgroundResource(R.drawable.business_icon);
+		imgTab3.setBackgroundResource(R.drawable.business_blue_icon);
 		Log.e("mylog", "business out");
 		
 		Log.e("mylog", "own in");
@@ -88,7 +88,7 @@ public class ViewPagerActivity extends Activity {
 		TextView tvTab4 = (TextView)tabIndicator4.findViewById(R.id.viewpager_text);
 		tvTab4.setText(R.string.own);
 		ImageView imgTab4 = (ImageView)tabIndicator4.findViewById(R.id.viewpager_image);
-		imgTab4.setBackgroundResource(R.drawable.own_icon);
+		imgTab4.setBackgroundResource(R.drawable.own_blue_icon);
 		Log.e("mylog", "own out");
 		
 		Log.e("mylog", "intent change in");

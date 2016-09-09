@@ -11,5 +11,12 @@
 			<accessrule kind="nonaccessible" pattern="com/android/internal/**"/>
 		</accessrules>
 	</classpathentry>
+	<classpathentry kind="lib" path="libs/baidumapapi_base_v4_0_0.jar"/>
+	<classpathentry kind="lib" path="libs/baidumapapi_cloud_v4_0_0.jar"/>
+	<classpathentry kind="lib" path="libs/baidumapapi_map_v4_0_0.jar"/>
+	<classpathentry kind="lib" path="libs/baidumapapi_radar_v4_0_0.jar"/>
+	<classpathentry kind="lib" path="libs/baidumapapi_search_v4_0_0.jar"/>
+	<classpathentry kind="lib" path="libs/baidumapapi_util_v4_0_0.jar"/>
+	<classpathentry kind="lib" path="libs/armeabi"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>

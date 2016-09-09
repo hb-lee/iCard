@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/shuise"
+    android:background="@color/white"
     android:orientation="vertical" >
 
     <ImageView
@@ -14,7 +14,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/gray"
+        android:background="@color/white"
         android:orientation="vertical" >
 
         <LinearLayout
@@ -24,7 +24,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="60dp"
                 android:layout_weight="1"
                 android:background="@drawable/index_shape"
                 android:gravity="center"
@@ -43,6 +43,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:text="天天降价"
+                        android:textSize="16sp"
                         android:textColor="@color/black" />
 
                     <TextView
@@ -51,6 +52,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:text="每天都有减价"
+                        android:textSize="12sp"
                         android:textColor="@color/black" />
                 </LinearLayout>
 
@@ -65,7 +67,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="60dp"
                 android:layout_weight="1"
                 android:background="@drawable/index_shape"
                 android:gravity="center"
@@ -83,6 +85,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
+                        android:textSize="16sp"
                         android:text="天天降价"
                         android:textColor="@color/black" />
 
@@ -91,6 +94,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
+                        android:textSize="12sp"
                         android:text="今天大降价"
                         android:textColor="@color/black" />
                 </LinearLayout>
@@ -113,7 +117,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="60dp"
                 android:layout_weight="1"
                 android:gravity="center"
                 android:orientation="horizontal" >
@@ -129,6 +133,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
+                        android:textSize="16sp"
                         android:text="天天降价"
                         android:textColor="@color/black" />
 
@@ -137,6 +142,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
+                        android:textSize="12sp"
                         android:text="今天大降价"
                         android:textColor="@color/black" />
                 </LinearLayout>
@@ -152,7 +158,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="60dp"
                 android:layout_weight="1"
                 android:background="@drawable/index_shape"
                 android:gravity="center"
@@ -170,6 +176,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
+                        android:textSize="16sp"
                         android:text="天天减价"
                         android:textColor="@color/black" />
 
@@ -178,6 +185,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
+                        android:textSize="12sp"
                         android:text="今天大减价"
                         android:textColor="@color/black" />
                 </LinearLayout>
@@ -193,20 +201,14 @@
         </LinearLayout>
     </LinearLayout>
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/line_height"
-        android:layout_marginBottom="@dimen/line_margin_updown"
-        android:layout_marginLeft="@dimen/line_margin_side"
-        android:layout_marginRight="@dimen/line_margin_side"
-        android:layout_marginTop="@dimen/line_margin_updown"
-        android:background="@color/black" />
-
     <TextView
         android:id="@+id/index_title"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:drawableLeft="@drawable/guess_you_like"
+        android:background="@color/gray"
+        android:textColor="@color/theme_color"
+        android:textSize="14sp"
         android:gravity="center_vertical"
         android:text="@string/guess_you_like" />
 
@@ -214,7 +216,7 @@
         android:id="@+id/index_listview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/kongse" >
+        android:background="@color/white" >
     </ListView>
 
 </LinearLayout>

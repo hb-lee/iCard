@@ -45,7 +45,6 @@ public class ContactsActivity extends Activity {
 				Intent intent = new Intent();
 				intent.setClass(getApplicationContext(), OwnActivity.class);
 				startActivity(intent);
-				finish();
 			}
 		});
 

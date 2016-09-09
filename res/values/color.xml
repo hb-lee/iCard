@@ -3,7 +3,7 @@
     <color name="white">#ffffff</color><!--白色 --> 
  	<color name="red">#ff0000</color><!--红色 --> 
  	<color name="black">#000000</color><!-- 黑色 --> 
- 	<color name="gray">#808080</color><!-- 灰色 -->
+ 	<color name="gray">#FFE3E3E7</color><!-- 灰色 -->
  	<color name="orange">#ffa500</color><!--橙色 --> 
  	<color name="green">#008000</color><!--绿色 -->
  	<color name="ivory">#fffff0</color><!-- 象牙色 -->
@@ -13,7 +13,9 @@
  	<color name="white_green">#cde6c7</color><!-- 白绿 -->
  	<color name="shuise">#afdfe4</color><!-- 水色 -->
  	<color name="kongse">#90d7ec</color><!-- 空色 -->
+ 	<color name="sub_list">#666666</color>
  	<color name="common_title_bar_pressed_color">#38000000</color>
  	<color name="transparent">#00000000</color>
  	<color name="theme_color">#ff249ef6</color>
+ 	<color name="whiteGray">#ffC9CACB</color>
 </resources>

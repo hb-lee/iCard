@@ -3,30 +3,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
-    <RelativeLayout
+	<com.baidu.mapapi.map.MapView
+        android:id="@+id/near_map"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/common_title_bar_height"
-        android:background="@color/theme_color" >
-
-        <TextView
-            android:id="@+id/near_cancel"
-            android:layout_width="@dimen/common_title_bar_icon_width"
-            android:layout_height="fill_parent"
-            android:gravity="center"
-            android:layout_alignParentStart="true"
-            android:background="@drawable/bg_common_title_bar_btn"
-            android:scaleType="center"
-            android:text="@string/searchfriend_cancel"/>
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:hint="@string/near_input_hint"
-            android:layout_centerInParent="true"
-            android:textColor="@color/black"
-            android:id="@+id/near_edittext"
-            android:drawableRight="@drawable/search"
-            android:textSize="@dimen/common_title_text_size" />
-    </RelativeLayout>
-
+        android:layout_height="match_parent"
+        android:clickable="true" />
 </LinearLayout>

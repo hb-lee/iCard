@@ -31,9 +31,11 @@
 
     <GridView 
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:numColumns="auto_fit"    
         android:columnWidth="80dp"
         android:stretchMode="columnWidth"
+        android:background="@drawable/index_shape"
         android:id="@+id/typedisplay_gridView">
         
     </GridView>
