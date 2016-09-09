@@ -64,6 +64,10 @@ public class TypeDisplayActivity extends Activity {
 			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
 					long arg3) {
 				Intent intent = new Intent();
+				Bundle bundle = new Bundle();
+				Map map = (HashMap) gridView.getItemAtPosition(arg2);
+				bundle.putString("type", map.get("text").toString());
+				intent.putExtras(bundle);
 				intent.setClass(getApplicationContext(), ItemListActivity.class);
 				startActivity(intent);
 				finish();

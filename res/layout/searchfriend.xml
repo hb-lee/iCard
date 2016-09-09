@@ -3,30 +3,72 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
+    
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/common_title_bar_height"
-        android:background="@color/theme_color" >
+        android:id="@+id/searchfriend_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme_color"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingRight="10dp" >
 
-        <TextView
+         <TextView
             android:id="@+id/searchfriend_cancel"
             android:layout_width="@dimen/common_title_bar_icon_width"
-            android:layout_height="fill_parent"
+            android:layout_height="wrap_content"
             android:gravity="center"
             android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp"
             android:background="@drawable/bg_common_title_bar_btn"
             android:scaleType="center"
             android:text="@string/searchfriend_cancel"/>
-
-        <EditText
-            android:id="@+id/searchfriend_content"
+        
+        <Button
+            android:id="@+id/searchfriend_btnSearch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="@string/search_input_hint"
-            android:layout_centerInParent="true"
-            android:textColor="@color/black"
-            android:drawableRight="@drawable/search"
-            android:textSize="@dimen/common_title_text_size" />
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/search_btn_background"
+            android:gravity="center"
+            android:text="@string/search"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/searchfriend_rlSearchFrameDelete"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60dp"
+            android:layout_toStartOf="@id/searchfriend_btnSearch"
+            android:gravity="center_vertical" >
+
+            <EditText
+                android:id="@+id/searchfriend_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/search_frame"
+                android:hint="@string/search_friends_hint"
+                android:paddingEnd="32dp"
+                android:paddingStart="32dp"
+                android:singleLine="true"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/business_ivDeleteText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:src="@drawable/delete"
+                android:visibility="gone" />
+        </RelativeLayout>
     </RelativeLayout>
+    
 
 </LinearLayout>

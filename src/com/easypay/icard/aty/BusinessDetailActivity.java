@@ -1,5 +1,8 @@
 package com.easypay.icard.aty;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,6 +11,7 @@ import android.view.View.OnClickListener;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.easypay.icard.R;
 
@@ -20,6 +24,7 @@ public class BusinessDetailActivity extends Activity {
 	private TextView gradeTotal = null;
 	private TextView phoneOfBusiness = null;
 	private ImageView mapBusiness = null;
+	private TextView businessContents = null;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -27,10 +32,28 @@ public class BusinessDetailActivity extends Activity {
 		setContentView(R.layout.businessdetail);
 		init();
 
-		titleBar.setText("春城杜老鲜麻辣烫");
-		businessPic.setBackgroundResource(R.drawable.demo1);
-		gradeTotal.append("9.5/10.0");
-		phoneOfBusiness.append("13484939584");
+		// 收集Bundle
+		Bundle bundle = this.getIntent().getExtras();
+		if(bundle.getString("activity").equals("NearActivity")){
+			titleBar.setText(bundle.getString("name"));
+			businessPic.setBackgroundResource(R.drawable.example_index_b1);
+			gradeTotal.append("9.5/10.0");
+			phoneOfBusiness.append(bundle.getString("phoneNum"));
+			businessContents.setText("所在城市：" + bundle.getString("city") + "\r\n"
+													+ "邮编：" + bundle.getString("postCode") + "\r\n"
+													+ "地址：" + bundle.getString("address"));
+		} else {
+			titleBar.setText(bundle.getString("name"));
+			businessPic.setBackgroundResource(bundle.getInt("imageView"));
+			gradeTotal.append("9.5/10.0");
+			phoneOfBusiness.append("130 ****0000");
+			businessContents.setText("店名：" + bundle.getString("name") + "\r\n"
+					+ "信息：" + bundle.getString("info") + "\r\n"
+				    + bundle.getString("memberPrice") + "\r\n"
+					+ bundle.getString("itemPrice"));
+			
+		}
+		
 		backTo.setOnClickListener(new OnClickListener() {
 
 			@Override
@@ -60,6 +83,7 @@ public class BusinessDetailActivity extends Activity {
 		gradeTotal = (TextView) findViewById(R.id.business_grade);
 		phoneOfBusiness = (TextView) findViewById(R.id.business_phone);
 		mapBusiness = (ImageView) findViewById(R.id.business_map);
+		businessContents = (TextView)findViewById(R.id.businessdetail_contents);
 	}
 
 }

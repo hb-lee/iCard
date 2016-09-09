@@ -71,6 +71,9 @@ public class ContactsActivity extends Activity {
 			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
 					long arg3) {
 				Intent intent = new Intent();
+				Bundle bundle = new Bundle();
+				bundle.putString("activity", "ContactsActivity");
+				intent.putExtras(bundle);
 				intent.setClass(getApplicationContext(),
 						PersonInfoActivity.class);
 				startActivity(intent);

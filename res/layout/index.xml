@@ -5,11 +5,36 @@
     android:background="@color/white"
     android:orientation="vertical" >
 
-    <ImageView
-        android:id="@+id/index_topimage"
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="wrap_content"
+        android:layout_height="130dp" />
+   
+    <LinearLayout
+        android:layout_alignBottom="@id/viewPager"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/example" />
+        android:background="#33000000"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/image_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/point_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            >
+        </LinearLayout>
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -23,6 +48,7 @@
             android:orientation="horizontal" >
 
             <LinearLayout
+                android:id="@+id/index_ads1"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_weight="1"
@@ -42,7 +68,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:text="天天降价"
+                        android:text="喵鲜生"
                         android:textSize="16sp"
                         android:textColor="@color/black" />
 
@@ -51,7 +77,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:text="每天都有减价"
+                        android:text="金枕榴莲热卖"
                         android:textSize="12sp"
                         android:textColor="@color/black" />
                 </LinearLayout>
@@ -62,10 +88,11 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="3dp"
                     android:layout_weight="2"
-                    android:background="@drawable/example1" />
+                    android:background="@drawable/example_index_ad1" />
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/index_ads2"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_weight="1"
@@ -86,7 +113,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:textSize="16sp"
-                        android:text="天天降价"
+                        android:text="淘票票"
                         android:textColor="@color/black" />
 
                     <TextView
@@ -95,7 +122,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:textSize="12sp"
-                        android:text="今天大降价"
+                        android:text="星际迷航3"
                         android:textColor="@color/black" />
                 </LinearLayout>
 
@@ -105,7 +132,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="3dp"
                     android:layout_weight="2"
-                    android:background="@drawable/example1" />
+                    android:background="@drawable/example_index_ad2" />
             </LinearLayout>
         </LinearLayout>
 
@@ -116,6 +143,7 @@
             android:orientation="horizontal" >
 
             <LinearLayout
+                android:id="@+id/index_ads3"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_weight="1"
@@ -134,7 +162,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:textSize="16sp"
-                        android:text="天天降价"
+                        android:text="每日新品"
                         android:textColor="@color/black" />
 
                     <TextView
@@ -143,7 +171,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:textSize="12sp"
-                        android:text="今天大降价"
+                        android:text="找新品戳我"
                         android:textColor="@color/black" />
                 </LinearLayout>
 
@@ -153,10 +181,11 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="3dp"
                     android:layout_weight="2"
-                    android:background="@drawable/example1" />
+                    android:background="@drawable/example_index_ad3" />
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/index_ads4"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_weight="1"
@@ -177,7 +206,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:textSize="16sp"
-                        android:text="天天减价"
+                        android:text="天天搞机"
                         android:textColor="@color/black" />
 
                     <TextView
@@ -186,7 +215,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:textSize="12sp"
-                        android:text="今天大减价"
+                        android:text="iPhone 7 预约"
                         android:textColor="@color/black" />
                 </LinearLayout>
 
@@ -196,7 +225,8 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="3dp"
                     android:layout_weight="2"
-                    android:background="@drawable/example1" />
+                    android:background="@drawable/example_index_ad4" />
+
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

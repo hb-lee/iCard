@@ -95,11 +95,11 @@ public class CardListActivity extends Activity {
 	private List<Map<String, Object>> getData() {
 		List<Map<String, Object>> list = new ArrayList<Map<String, Object>>();
 		Map<String, Object> map = new HashMap<String, Object>();
-		map.put("description", "下木铜饭店");
+		map.put("description", "合佳超市");
 		list.add(map);
 
 		map = new HashMap<String, Object>();
-		map.put("description", "下木铜饭店");
+		map.put("description", "合佳超市");
 		list.add(map);
 		return list;
 	}

@@ -95,25 +95,25 @@ public class ApplyCardActivity extends Activity {
 	private List<Map<String, Object>> getData() {
 		List<Map<String, Object>> list = new ArrayList<Map<String, Object>>();
 		Map<String, Object> map = new HashMap<String, Object>();
-		map.put("picture", R.drawable.demo1);
+		map.put("picture", R.drawable.example_index_b1);
 		map.put("intro",
 				"这是一个历史悠久的富含韵味的非常好吃的点，里面环境好，风景好，人好，山好，什么都很好，值得来光临，而且价格优惠，欢迎品尝！！！");
 		list.add(map);
 
 		map = new HashMap<String, Object>();
-		map.put("picture", R.drawable.demo2);
+		map.put("picture", R.drawable.example_index_b2);
 		map.put("intro",
 				"这是一个历史悠久的富含韵味的非常好吃的点，里面环境好，风景好，人好，山好，什么都很好，值得来光临，而且价格优惠，欢迎品尝！！！");
 		list.add(map);
 
 		map = new HashMap<String, Object>();
-		map.put("picture", R.drawable.demo3);
+		map.put("picture", R.drawable.example_index_b3);
 		map.put("intro",
 				"这是一个历史悠久的富含韵味的非常好吃的点，里面环境好，风景好，人好，山好，什么都很好，值得来光临，而且价格优惠，欢迎品尝！！！");
 		list.add(map);
 
 		map = new HashMap<String, Object>();
-		map.put("picture", R.drawable.demo4);
+		map.put("picture", R.drawable.example_index_b4);
 		map.put("intro",
 				"这是一个历史悠久的富含韵味的非常好吃的点，里面环境好，风景好，人好，山好，什么都很好，值得来光临，而且价格优惠，欢迎品尝！！！");
 		list.add(map);

@@ -49,6 +49,7 @@
 	<string name="donatecard_title">选择赠送</string>
 	<string name="donatecard_donate">赠送给他(她)</string>
 	<string name="searchfriend_cancel">取消</string>
+	<string name="search_friends_hint">请输入对方账号</string>
 	<string name="search_input_hint">输入账号/手机号</string>
 	<string name="near_input_hint">请输入搜索的类别</string>
 	<string name="applycard_title">办理会员卡</string>
@@ -76,4 +77,9 @@
 	</style>
 	<string name="name">姓名：</string>
 	<string name="phone">电话：</string>
+	<string name="switch_to_normal">切换至平面地图</string>
+	<string name="switch_to_sateline">切换至卫星地图</string>
+	<string name="search">搜索</string>
+	<string name="search_business_hint">请输入店家名称</string>
+	<string name="search_type_hint">请输入您要搜索的类别</string>
 </resources>

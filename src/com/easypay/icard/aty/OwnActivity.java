@@ -3,6 +3,7 @@ package com.easypay.icard.aty;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageButton;
@@ -17,6 +18,7 @@ public class OwnActivity extends Activity {
 	private TextView billText = null;
 	private ImageButton friendsImgBtn = null;
 	private ImageButton addImgBtn = null;
+	private RelativeLayout ownInfo = null;
 	private ImageView ownPhoto = null;
 	private TextView ownName = null;
 	private TextView ownPhone = null;
@@ -33,6 +35,7 @@ public class OwnActivity extends Activity {
 		billText = (TextView)findViewById(R.id.own_bill);
 		friendsImgBtn = (ImageButton)findViewById(R.id.own_friends);
 		addImgBtn = (ImageButton)findViewById(R.id.own_add);
+		ownInfo = (RelativeLayout)findViewById(R.id.layout_myinfo_item);
 		ownPhoto = (ImageView)findViewById(R.id.own_photo);
 		ownName = (TextView)findViewById(R.id.own_name);
 		ownPhone = (TextView)findViewById(R.id.own_phone);
@@ -64,6 +67,20 @@ public class OwnActivity extends Activity {
 			public void onClick(View arg0) {
 				Intent intent = new Intent();
 				intent.setClass(getApplicationContext(), SearchFriendActivity.class);
+				startActivity(intent);
+			}
+		});
+		
+		ownInfo.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				Log.e("mylog", "onclick in");
+				Intent intent = new Intent();
+				Bundle bundle = new Bundle();
+				bundle.putString("activity", "OwnActivity");
+				intent.putExtras(bundle);
+				intent.setClass(getApplicationContext(), PersonInfoActivity.class);
 				startActivity(intent);
 			}
 		});
